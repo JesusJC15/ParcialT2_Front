@@ -31,7 +31,7 @@ const RegisterPayment = () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:8080/pagos/realizar", pagoData, {
+      const response = await axios.post("https://parcialt2-b2fvb9atb9adfkaq.canadacentral-01.azurewebsites.net/pagos/realizar", pagoData, {
         headers: { "Content-Type": "application/json" },
       });
 

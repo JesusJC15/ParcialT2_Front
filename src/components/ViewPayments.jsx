@@ -8,7 +8,7 @@ const ViewPayments = () => {
 
   const consultarPagos = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/pagos/usuario/${usuarioId}`);
+      const response = await axios.get(`https://parcialt2-b2fvb9atb9adfkaq.canadacentral-01.azurewebsites.net/pagos/usuario/${usuarioId}`);
       setPagos(response.data);
       setMensaje(response.data.length ? "" : "No se encontraron pagos.");
     } catch (error) {
